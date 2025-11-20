@@ -14,8 +14,11 @@ const app = express();
 //     useNewUrlParser: true,
 //     useUnifiedTopology:true,
 // });
-// database connect (UPDATED)
-mongoose.connect("mongodb://localhost:27017/projectDG")
+// database connect (UPDATED)mongodb://localhost:27017/projectDG
+
+mongoose.connect(process.env.MONGO_URI)
+
+// mongoose.connect("")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log("DB Connection Error:", err));
 
