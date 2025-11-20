@@ -1,0 +1,7 @@
+iit2021230_db_user = "gTieCwN2sOwm0Emm"
+
+MONGO_URI="mongodb+srv://iit2021230_db_user:gTieCwN2sOwm0Emm@cluster0.u5mrsuq.mongodb.net/?appName=Cluster0"
+
+
+shubhanjali32@gmail.com
+MONGO_URI="mongodb+srv://user-ai-02:userAi-033322@cluster0.qxrf1lw.mongodb.net/?appName=Cluster0"
