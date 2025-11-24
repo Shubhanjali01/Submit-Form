@@ -8,22 +8,11 @@ const port = process.env.PORT || 3000 ;
 const app = express();
 
 
-// database connect
-// mongoose.connect("mongodb://localhost:27017/projectDG",{
-//    
-//     useNewUrlParser: true,
-//     useUnifiedTopology:true,
-// });
-// database connect (UPDATED)mongodb://localhost:27017/projectDG
-
 mongoose.connect(process.env.MONGO_URI)
-
-// mongoose.connect("")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log("DB Connection Error:", err));
 
 let db = mongoose.connection;
-
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
